@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<charset meta="utf-8">
+	</head>
+	
+	<body>
+	<form method="POST">
+		Введите первое число:<input type="action" name="one"> <br/>
+		Введите второе число:<input type="action" name="two"> <br/>
+		Укажите тип операции (сложение, разность, произведение или частное):<input type="action" name="type"> <br/>
+		<input type="submit" value="OK">
+	</form>
+	</body>
+
+</html>
+
+<?php
+
+$one = "$_POST('one')";
+$two = "$_POST('two')";
+$type = "$_POST('type')";
+
+	if ($type = "сложение") 
+		echo "Сумма равна $one + $two";
+	else 
+		echo "";
+		
+	if ($type = "разность") 
+		echo "Разность равна $one - $two";
+	else 
+		echo "";
+
+	if ($type = "умножение") 
+		echo "Произведение равно $one * $two";
+	else 
+		echo "";
+		
+	if ($type = "частное") 
+		echo "Частное равно $one / $two";
+	else 
+		echo "";
+?>
